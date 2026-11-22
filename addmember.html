@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Club Members</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f7e6e8;
+            font-family: 'DM Sans', sans-serif;
+            color: #5c3a21;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #e3eae1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #5c3a21;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #c9b6a5;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #5c3a21;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background-color: #79563d;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f7e6e8;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="addmember.html">Add Members</a>
+        <a href="elementcheck.html">Element Checker</a>
+        <a href="creator.html">Meet the Creator</a>
+    </nav>
+
+    <h1>Add Club Members</h1>
+
+    <div class="container">
+
+        <p>Enter the first and last name of the new club member.</p>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter first name">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter last name">
+
+        <button type="button" py-click="getname">Add Member</button>
+
+        <div id="output"></div>
+
+    </div>
+
+    <footer>
+        Chapter & Chat Book Club
+    </footer>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+
+</html>
